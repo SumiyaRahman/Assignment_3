@@ -2,3 +2,27 @@
 body{
     font-family: "Manrope", sans-serif;
 }
+.about-img{
+    background-image: url("../assets/Rectangle.png");
+    width: 573px;
+    height: 560.67px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* small devices */
+@media screen and (max-width:640px) {
+    .about-img{
+        width: 335px;
+        height: 223px;
+    }
+}
+
+/* medium device */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .about-img{
+        width: 770px;
+        height: 385px;
+    }
+}
