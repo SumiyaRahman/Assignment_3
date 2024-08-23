@@ -10,12 +10,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.portfolio-section{
+    background: white;
+}
 /* small devices */
 @media screen and (max-width:640px) {
     .about-img{
         width: 335px;
         height: 223px;
+    }
+    .portfolio-section{
+        background: #f4f4f4;
     }
 }
 
@@ -24,5 +29,8 @@ body{
     .about-img{
         width: 770px;
         height: 385px;
+    }
+    .portfolio-section{
+        background: #f4f4f4;
     }
 }
