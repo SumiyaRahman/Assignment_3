@@ -13,6 +13,13 @@ body{
 .portfolio-section{
     background: white;
 }
+.form-part{
+    background: url("../assets/bg.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* small devices */
 @media screen and (max-width:640px) {
     .about-img{

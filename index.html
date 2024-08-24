@@ -41,7 +41,7 @@
   </head>
   <body>
     <!-- header section -->
-    <header class="container mx-auto pt-16 mb-28">
+    <header class="container mx-auto pt-16 mb-28 px-5 lg:px-0">
       <!-- navbar -->
       <nav></nav>
 
@@ -78,9 +78,9 @@
     </header>
 
     <!-- main section -->
-    <main>
+    <main class=" px-5 lg:px-0">
       <!-- about section, stat, work process -->
-      <div class="bg-[#f4f4f4] py-28 px-5 lg:px-0">
+      <div class="bg-[#f4f4f4] py-28">
         <section class="container mx-auto">
           <div class="invisible lg:visible mb-9">
             <img src="./assets/Vector.png" />
@@ -412,11 +412,17 @@
                 </div>
               </div>
             </div>
-  
+
+            <!-- img 6 -->
+            <div class="col-span-12 md:col-span-6 lg:col-span-2">
+              <img class="w-full border border-gray-300 rounded-lg p-6" src="./assets/img3.png">
+            </div>
+
             <!-- img 5 -->
-            <div class="col-span-12 lg:col-span-2 sm:visible md:invisible lg:visible">
+            <div class="col-span-12 md:col-span-6 lg:col-span-2 sm:block lg:hidden">
               <img class="w-full border border-gray-300 rounded-lg p-6" src="./assets/img5.png">
             </div>
+            
           </div>
         </div>
       </section>
@@ -438,7 +444,7 @@
       </section> -->
 
       <!-- discuss project -->
-      <!-- <section class="mt-28">
+      <section class="mt-28 form-part py-28 px-5 lg:px-0">
         <div class="flex justify-center">
           <div
           class="w-48 flex items-center justify-center bg-rinterio-primary-light px-4 py-2 rounded-full text-rinterio-sub-title-text mb-4"
@@ -451,7 +457,37 @@
           <h1 class="text-rinterio-title-text font-bold text-2xl md:text-[32px] lg:text-[40px] text-center mb-6">Let’s Discuss Next Project</h1>
           <p class="w-full md:w-5/12 mx-auto text-rinterio-sub-title-text font-medium text-base text-center leading-7 lg:leading-8">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-      </section> -->
+
+        <!-- from -->
+          <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              <div>
+                  <input class="p-4 w-full border-none outline-none bg-slate-50 rounded-full placeholder:text-sm mt-4" type="text" placeholder="Full name*">
+              </div>
+              <div>
+                  <input class="p-4 w-full border-none outline-none bg-slate-50 rounded-full placeholder:text-sm mt-4" type="text" placeholder="Last Name*">
+              </div>
+              <div>
+                  <input class="p-4 w-full border-none outline-none bg-slate-50 rounded-full placeholder:text-sm mt-4" type="text" placeholder="Phone Number*">
+              </div>
+              <div>
+                  <input class="p-4 w-full border-none outline-none bg-slate-50 rounded-full placeholder:text-sm mt-4" type="email" placeholder="Email Address*">
+              </div>
+              <div class="md:col-span-2">
+                  <textarea rows="7" class="p-4 w-full border-none outline-none bg-slate-50 rounded-2xl placeholder:text-sm mt-4" placeholder="Write your message here" name="" id=""></textarea>
+              </div>
+              <div class="md:col-span-2 ">
+                <button class="btn w-full bg-rinterio-primary text-xl font-extrabold text-rinterio-btn-text rounded-full border-none outline-none">
+                  Send Message
+                  <div
+                  class="w-6 h-6 md:w-8 md:h-8 flex justify-center items-center rounded-full bg-rinterio-btn-text ms-4"
+                >
+                  <i class="fa-solid fa-arrow-right text-lg text-white -rotate-45"></i>
+                </div>
+                </button>
+              </div>
+          </div>
+      </div>
+      </section>
     </main>
 
     <!-- footer section -->
