@@ -20,8 +20,6 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "renterio-bg-primary": "#f7f7f7",
-              "renterio-bg-secondry": "#f4f4f4",
               "rinterio-primary": "rgb(171, 239, 95)",
               "rinterio-primary-light": "rgba(171, 239, 95, 0.5)",
               "rinterio-title-text": "rgb(33, 33, 33)",
@@ -41,9 +39,125 @@
   </head>
   <body>
     <!-- header section -->
-    <header class="container mx-auto pt-16 mb-28 px-5 lg:px-0">
+    <header class="container mx-auto mb-28 px-5 lg:px-0">
       <!-- navbar -->
-      <nav></nav>
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="flex justify-center items-center space-x-2">
+            <div
+              class="w-7 h-7 lg:w-9 lg:h-9 bg-rinterio-primary border rounded-full text-base lg:text-xl -rotate-45 flex justify-center items-center"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div>
+              <a class="text-2xl md:text-3xl lg:text-4xl font-bold">Rinterio</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-8">
+            <li
+              class="font-extrabold text-sm text-rinterio-sub-title-text hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+            >
+              <a>Home</a>
+            </li>
+            <li
+              class="text-sm text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+            >
+              <a>Services</a>
+            </li>
+            <li
+              class="text-sm text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+            >
+              <a>Portfolio</a>
+            </li>
+            <li
+              class="text-sm text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+            >
+              <a>Blogs</a>
+            </li>
+            <li
+              class="text-sm text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+            >
+              <a>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden md:flex justify-center items-center space-x-3">
+            <div
+              class="w-9 h-9 bg-white border rounded-full text-base text-rinterio-sub-title-text flex justify-center items-center"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="w-9 h-9 bg-white border rounded-full text-base text-rinterio-sub-title-text flex justify-center items-center"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+              <button class="flex items-center bg-rinterio-primary text-lg lg:text-xl font-extrabold text-rinterio-btn-text rounded-full border-none outline-none py-2 px-4">
+                Book Consult
+                <div class="w-6 h-6 lg::w-8 lg::h-8 flex justify-center items-center rounded-full bg-rinterio-btn-text ms-4">
+                  <i class="fa-solid fa-arrow-right text-lg text-white -rotate-45"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="ml-3 mr-2 lg:hidden">
+              <div
+                class="w-9 h-9 lg:w-9 lg:h-9 bg-white border rounded-full text-base text-rinterio-sub-title-text flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 -ml-52"
+            >
+              <li
+                class="text-base text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+              >
+                <a>Home</a>
+              </li>
+              <li
+                class="text-base text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+              >
+                <a>Services</a>
+              </li>
+              <li
+                class="text-base text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+              >
+                <a>Portfolio</a>
+              </li>
+              <li
+                class="text-base text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+              >
+                <a>Blogs</a>
+              </li>
+              <li
+                class="text-base text-rinterio-sub-title-text hover:font-extrabold hover:text-white hover:bg-rinterio-primary hover:border hover:rounded-lg"
+              >
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <!-- banner -->
       <section class="mt-14">
@@ -78,11 +192,11 @@
     </header>
 
     <!-- main section -->
-    <main class="">
+    <main>
       <!-- about section, stat, work process -->
       <div class="bg-[#f4f4f4] py-28 px-5 lg:px-0">
         <section class="container mx-auto">
-          <div class="invisible lg:visible mb-9">
+          <div class="hidden lg:block mb-9">
             <img src="./assets/Vector.png" />
           </div>
           <!-- about us -->
@@ -119,7 +233,7 @@
                     <div class="me-6">
                       <img class="w-full" src="./assets/commercial.png" />
                     </div>
-                    <div>
+                    <div> 
                       <h6
                         class="text-xl font-extrabold text-rinterio-sub-title-text mb-3"
                       >
